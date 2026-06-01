@@ -1,0 +1,447 @@
+{
+  "summary": {
+    "total": 81,
+    "passed": 81,
+    "failed": 0,
+    "score": 100.0
+  },
+  "sections": [
+    {
+      "name": "Structure Tests",
+      "marker": "structure",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "score": 0.0,
+      "tests": []
+    },
+    {
+      "name": "Server Tests",
+      "marker": "server",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "score": 0.0,
+      "tests": []
+    },
+    {
+      "name": "Agent Tests",
+      "marker": "agent_tests",
+      "total": 81,
+      "passed": 81,
+      "failed": 0,
+      "skipped": 0,
+      "score": 100.0,
+      "tests": [
+        {
+          "name": "test_redistribution_eligible",
+          "outcome": "passed",
+          "duration": 0.0005
+        },
+        {
+          "name": "test_redistribution_temperature_incompatible",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_redistribution_shelf_life_too_short",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_redistribution_disabled_in_config",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_markdown_tier1",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_markdown_tier2",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_markdown_tier3",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_markdown_disabled",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_markdown_outside_trigger_days",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_rtv_with_active_agreement",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_rtv_blocked_when_days_too_low",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_rtv_escalation_flag_when_no_agreement_and_high_exposure",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_rtv_no_agreement_low_exposure_returns_none",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_disposal_always_returns_recommendation",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_match_actions_returns_redistribution_first",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_match_actions_fallback_disposal",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_match_actions_hazmat_no_redistribution",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_agent_invoke_returns_response",
+          "outcome": "passed",
+          "duration": 0.0021
+        },
+        {
+          "name": "test_agent_stream_yields_chunks",
+          "outcome": "passed",
+          "duration": 0.0008
+        },
+        {
+          "name": "test_agent_handles_empty_scan_gracefully",
+          "outcome": "passed",
+          "duration": 0.0008
+        },
+        {
+          "name": "test_parse_batch_scan_empty_response",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_parse_open_orders_empty",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_parse_demand_forecasts_empty",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_parse_vendor_agreements_empty",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_agent_response_dataclass",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_agent_model_name",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_agent_temperature",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_agent_system_prompt_contains_rules",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_agent_class_supported_content_types",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_channel_reallocation_disabled",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_channel_reallocation_stale_forecast",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_channel_reallocation_transfer_infeasible",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_channel_reallocation_eligible",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_rtv_ineligible_qty_below_min",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_default_config",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_weights_sum_to_100",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_invalid_weights_raise_error",
+          "outcome": "passed",
+          "duration": 0.0006
+        },
+        {
+          "name": "test_override_via_env",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_action_types_enabled_parsing",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_normalise_when_max_equals_min",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_normalise_clamp_above_max",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_normalise_clamp_below_min",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_risk_batch_below_min_risk_qty_returns_none",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_risk_batch_ibp_stale_confidence_low",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_risk_batch_with_stale_forecast_flag",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_risk_batch_short_expiry_high_confidence",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_markdown_qty_at_minimum",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_markdown_qty_above_minimum",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_net_risk_qty_zero_horizon_days",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_risk_batch_total_exposure",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_vendor_agreement_defaults",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_redistribution_no_available_bins",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_redistribution_different_plant_ignored",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_mock_tools_missing_file",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_mock_tools_invalid_json",
+          "outcome": "passed",
+          "duration": 0.0025
+        },
+        {
+          "name": "test_build_mock_tools_empty_mock",
+          "outcome": "passed",
+          "duration": 0.0004
+        },
+        {
+          "name": "test_get_mcp_tools_in_test_mode_no_mock_file",
+          "outcome": "passed",
+          "duration": 0.0004
+        },
+        {
+          "name": "test_build_mock_tools_with_valid_server_tool",
+          "outcome": "passed",
+          "duration": 0.0016
+        },
+        {
+          "name": "test_build_mock_tool_coroutine_returns_json",
+          "outcome": "passed",
+          "duration": 0.001
+        },
+        {
+          "name": "test_tool_cache_ttl_env",
+          "outcome": "passed",
+          "duration": 0.0011
+        },
+        {
+          "name": "test_report_contains_header",
+          "outcome": "passed",
+          "duration": 0.0004
+        },
+        {
+          "name": "test_report_per_batch_block",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_report_summary_table",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_report_exceptions_section",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_report_stale_ibp_warning",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_report_draft_artefact_present",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_report_no_at_risk_batches",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_report_multiple_batches_sorted_by_score",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_residual_not_covered_no_orders",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_residual_covered_fully_ordered",
+          "outcome": "passed",
+          "duration": 0.0006
+        },
+        {
+          "name": "test_residual_not_covered_large_remaining",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_net_risk_qty_no_orders_no_forecast",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_net_risk_qty_with_orders",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_net_risk_qty_with_forecast_consumption",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_net_risk_qty_zero_floored",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_risk_score_range",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_risk_score_c_bin_higher_than_a_bin",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_risk_batch_returns_none_outside_horizon",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_risk_batch_hazmat_excluded",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_build_risk_batch_no_sled_returns_none",
+          "outcome": "passed",
+          "duration": 0.0004
+        },
+        {
+          "name": "test_build_risk_batch_in_horizon",
+          "outcome": "passed",
+          "duration": 0.0002
+        }
+      ],
+      "coverage": 71.7
+    }
+  ]
+}

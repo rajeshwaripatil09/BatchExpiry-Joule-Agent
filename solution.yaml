@@ -1,0 +1,14 @@
+apiVersion: solution.sap/v1
+kind: Solution
+
+metadata:
+  name: batch-expiry-risk-agent-f8496
+  version: 1.0.0
+  description: >
+    Proactive batch expiry risk management agent that integrates with SAP EWM and
+    SAP IBP to identify at-risk batches, score financial exposure, and deliver a
+    prioritised action report with DRAFT artefacts (redistribution, channel
+    reallocation, markdown, RTV, disposal) to prevent inventory write-offs.
+
+assets:
+  - ref: ./assets/batch-expiry-risk-agent/asset.yaml
